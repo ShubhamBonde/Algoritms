@@ -12,12 +12,18 @@
         cin >> n;
         units = n % 10;
 
-        if (units == 0)
-            cout << 0 << endl;
-        else if (units == 5)
-            cout << 1 << endl;
-        else
-            cout << -1 << endl;
+        switch(units)
+		{
+			case(0):
+				cout << 0 << endl;
+				break;
+			case(5):
+				cout << 1 << endl;
+				break;
+			default:
+				cout << -1 << endl;
+		}
+		
     }
     return 0;
   }
